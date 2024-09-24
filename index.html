@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Example</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Botões na Vertical</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 10px 100px 100px 300px;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 10px;
+        }
+        .button-container button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Logo</div>
-        <nav>
-            <ul>
-                <li><a href="#">Principal</a></li>
-                <li><a href="#">Mais</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contatos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">Banner do site</section>
-        <section class="content">
-            <div class="column">Imagem 1</div>
-            <div class="column">Imagem 2</div>
-            <div class="column">Imagem 3</div>
-        </section>
-    </main>
-
-    <footer>
-        <pO>Footer do site</p>
-        <p>Samuel lindo</p>
-    </footer>
+    <div class="button-container">
+        <button onclick="window.location.href='pagina1.html'">Botão 1</button>
+        <button onclick="window.location.href='pagina2.html'">Botão 2</button>
+        <button onclick="window.location.href='pagina3.html'">Botão 3</button>
+        <button onclick="window.location.href='pagina4.html'">Botão 4</button>
+        <button onclick="window.location.href='pagina5.html'">Botão 5</button>
+        <button onclick="window.location.href='pagina6.html'">Botão 6</button>
+        <button onclick="window.location.href='pagina7.html'">Botão 7</button>
+        <button onclick="window.location.href='pagina8.html'">Botão 8</button>
+        <button onclick="window.location.href='pagina9.html'">Botão 9</button>
+        <button onclick="window.location.href='pagina10.html'">Botão 10</button>
+    </div>
 </body>
 </html>
